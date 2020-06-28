@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+*, pre { font-size:18px; font-family:'Noto Sans KR', sans-serif; }
+
+.wrap { height:100%; position:fixed; width:100%; }
+
+.top { padding-top:20px; }
+.top h1 { font-size:40px; margin-bottom:40px; text-align:center; }
+.top span                        { box-sizing:border-box; display:none; font-size:18px; height:30px; line-height:30px; margin-top:10px; padding:0 10px; }
+.top span                        button { height:30px; line-height:18px; margin-left:4px; vertical-align:middle; width:100px; }
+.top span.input-max-width.active { display:block; }
+.top span.input-max-width        input  { box-sizing:border-box; border:1px solid #ededed; height:30px; line-height:18px; padding:0 4px; vertical-align:middle; }
+.top span.copy-reset             { display:none; }
+.top span.copy-reset.active      { display:block; }
+.input-px-css { box-sizing:border-box; height:calc(100% - 150px); margin-top:10px; padding:10px; width:100%; }
+.input-px-css textarea        { box-sizing:border-box; border:1px solid #ededed; display:none; height:100%; padding:10px; resize:none; width:100%; }
+.input-px-css textarea.active { display:block; }
+.input-px-css pre        { box-sizing:border-box; border:1px solid #ededed; display:none; height:100%; padding:10px; width:100%; white-space:pre-wrap; }
+.input-px-css pre.active { display:block; }
+
+
+@media (max-width:1024px) {
+
+    *, pre { font-size:1.758vw; font-family:'Noto Sans KR', sans-serif; }
+    
+    .wrap { height:100%; position:fixed; width:100%; }
+    
+    .top { padding-top:1.953vw; }
+    .top h1 { font-size:3.906vw; margin-bottom:3.906vw; text-align:center; }
+    .top span                        { box-sizing:border-box; display:none; font-size:1.758vw; height:2.930vw; line-height:2.930vw; margin-top:0.977vw; padding:0 0.977vw; }
+    .top span                        button { height:2.930vw; line-height:2.930vw; margin-left:0.391vw; width:9.766vw; }
+    .top span.input-max-width.active { display:block; }
+    .top span.input-max-width        input  { box-sizing:border-box; border:1px solid #ededed; height:2.930vw; line-height:2.930vw; padding:0 0.391vw; }
+    .top span.copy-reset             { display:none; }
+    .top span.copy-reset.active      { display:block; }
+    .input-px-css { box-sizing:border-box; height:calc(100% - 14.648vw); margin-top:0.977vw; padding:0.977vw; width:100%; }
+    .input-px-css textarea        { box-sizing:border-box; border:1px solid #ededed; display:none; height:100%; padding:0.977vw; resize:none; width:100%; }
+    .input-px-css textarea.active { display:block; }
+    .input-px-css pre        { box-sizing:border-box; border:1px solid #ededed; display:none; height:100%; padding:0.977vw; width:100%; white-space:pre-wrap; }
+    .input-px-css pre.active { display:block; }
+    
+    
+}
