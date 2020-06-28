@@ -53,7 +53,7 @@ function ready(fn) {
 
 function convertCss(viewPortWidth, pxCss) {
     var vwCss = pxCss;
-    for(var px=2; px<=1000; px++) {
+    for(var px=2; px<=2000; px++) {
         var regexColon = new RegExp(':' + px + 'px', 'gi');
         var regexSpace = new RegExp(' ' + px + 'px', 'gi');
         vwCss = vwCss.replace(regexColon, ':' + convertPxToVw(viewPortWidth, px) + 'vw');
